@@ -5,8 +5,6 @@ import { ThemeContext } from "./Context/theme";
 import { About } from "./Components/About/About";
 import Aos from "aos";
 import "aos/dist/aos.css";
-import { Projects } from "./Components/Projects/Projects";
-import { Footer } from "./Components/Footer/Footer";
 import { Contact } from './Components/Contact/Contact';
 import { ScrollToTop } from "./Components/ScrollToTop/ScrollToTop";
 // import { BrowserRouter as Router, Navigate, Route, Routes } from 'react-router-dom';

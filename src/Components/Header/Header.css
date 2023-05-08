@@ -21,6 +21,7 @@ img{
   border-radius: 50%;
   width: 50px; /* adjust size as needed */
   height: 50px; /* adjust size as needed */
+  margin-top:15px;
 }
 
 .flip {
