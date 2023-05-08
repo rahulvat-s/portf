@@ -1,0 +1,25 @@
+.cards {
+  width: 100%;
+  height: 20vh;
+  max-height: 140px;
+  box-shadow: var(--shadow);
+  z-index: 1;
+  border-radius: 20px;
+  margin: 2.5%;
+  float: left;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid var(--clr-primary);
+}
+.h4color{
+    color:var(--clr-primary);
+}
+.h5color{
+    color:var(--clr-fg-alt);
+}
+.cards> svg {
+    font-size: 8vh;
+    color: var(--clr-primary);
+  }
