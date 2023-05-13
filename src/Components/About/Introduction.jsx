@@ -32,7 +32,7 @@ export const Introduction = () => {
                 <span className="different">
                 Maharshi Dayanand University, (Haryana).
                 </span>
-                My current stack includes NodeJs, NestJs, ExpressJs, NextJs, ReactJs, Bootstrap, MongoDB, Mysql, Rightnow, PHP etc.
+                My current stack includes NodeJs, ReactJs, ExpressJs, Jquery, Rest APIs, Javascript, MongoDB, Mysql, Rightnow, PHP etc.
               </h4>
               <h4 className="hdifferent">Apart form Coding my hobbies are:</h4>
               <h4 className="different">

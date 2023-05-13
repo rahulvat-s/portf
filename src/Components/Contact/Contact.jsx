@@ -3,7 +3,7 @@ import { makeStyles } from "@mui/styles";
 import React, { useContext, useRef, useState } from "react";
 import isEmail from "validator/lib/isEmail";
 import { ThemeContext } from "../../Context/theme";
-import { ContactForm } from './ContactForm';
+import { ContactForm } from "./ContactForm";
 
 export const Contact = () => {
   const [{ themename }] = React.useContext(ThemeContext);
@@ -64,8 +64,7 @@ export const Contact = () => {
     submitBtn: {
       backgroundColor: "#1D9BF0",
       color: themename === "light" ? "#ffffff" : "#252525",
-      boxShadow:
-      "0px 4px 8px 0px #1D9BF0, 0px 0px 0px 1px rgba(0, 0, 0, 0.06)",
+      boxShadow: "0px 4px 8px 0px #1D9BF0, 0px 0px 0px 1px rgba(0, 0, 0, 0.06)",
       transition: "250ms ease-in-out",
       "&:hover": {
         transform: "scale(1.05)",
@@ -78,18 +77,26 @@ export const Contact = () => {
   const classes = useStyles();
 
   const handleContactForm = (e) => {
-    console.log("Hello");
     e.preventDefault();
 
     if (name && email && message) {
       if (isEmail(email)) {
+        const params = {
+          from_name: name,
+          reply_to: email,
+          to_name: "Rahul Vats",
+          message: message,
+        };
         emailjs
-          .sendForm(
-            'service_smudu54','template_bzejl06',
-            form.current,'RWPxHhvegNFsdWIvz'
+          .send(
+            "service_smudu54",
+            "template_bzejl06",
+            params,
+            "RWPxHhvegNFsdWIvz",
           )
           .then(
             (result) => {
+              console.log(result.text);
               console.log("success");
               setSuccess(true);
               setErrMsg("");

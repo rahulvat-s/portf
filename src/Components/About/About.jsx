@@ -13,7 +13,18 @@ import { Experience } from "./Experience";
 import { Techstacks } from "./Techstacks";
 import imageJson from "../../animation/coding.json";
 import Lottie from "lottie-react";
+import { ThemeContext } from "../../Context/theme";
 export const About = () => {
+  const [{ themename, toggeltheme }] = React.useContext(ThemeContext);
+  const [showNavList, setShowNavList] = React.useState(false);
+
+  const toggleNavList = (id) => {
+    var element = document.getElementById(id);
+    if (element) {
+      element.scrollIntoView();
+    }
+    setShowNavList(!showNavList);
+  };
   return (
     <>
       <div class="parent-container" id="mainparent-container">
@@ -72,7 +83,7 @@ export const About = () => {
               <LinkedInIcon />
             </a>
           </div>
-            <button className="btnContact">Contact</button>
+            <button className="btnContact" onClick={() => toggleNavList("#contact")}>Contact</button>
         </div>
         <div class="image-container">
           <Lottie loop={true} animationData={imageJson} />
