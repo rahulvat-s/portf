@@ -19,7 +19,7 @@
 }
 
 .introduction_logocontainer > img {
-  width: 60%;
+  width: 65%;
   height: 85%;
   border-radius: 50%;
   border: 3.5px solid var(--clr-primary);
@@ -31,7 +31,7 @@
 
 .introduction_datacontainer > h4:nth-child(1) {
   margin-top: 0;
-  line-height: 1.4em;
+  line-height: 1.7em;
 }
 
 .introduction_datacontainer > h4:nth-child(2) {

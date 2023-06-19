@@ -35,7 +35,7 @@ export const About = () => {
             <span class="about__name">Rahul Vats</span>
           </h1>
           <Type />
-          <p class="about__desc" data-aos="fade-right">
+          <p class="about__desc" data-aos="fade-right" style={{lineHeight:"1.7"}}>
             Passionate, creative and a professional Full Stack Developer having
             proficiency in MERN Stack. A quick learner with a self-learning
             attitude. Attired with a variety of tools & technologies and keen to

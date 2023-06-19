@@ -19,7 +19,7 @@ export const Introduction = () => {
             <div className="introduction_logocontainer">
               <img src={profilePic} alt="Images" />
             </div>
-            <div className="introduction_datacontainer">
+            <div className="introduction_datacontainer" >
               <h4 className="hdifferent">
                 Hi Everyone, My name is{" "}
                 <span className="different">Rahul vats. </span> I'm a Software Developer based in Gurgaon, India and  I am from{" "}
