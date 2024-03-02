@@ -6,9 +6,7 @@ import {
   SiHtml5,
   SiMaterialui,
   SiExpress,
-  SiRedis,
   SiTailwindcss,
-  SiNetlify,
   SiNextdotjs,
   SiTypescript,
   SiSocketdotio 
