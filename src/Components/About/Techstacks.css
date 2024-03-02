@@ -8,7 +8,7 @@
   width: 100%;
   text-align: center;
   background-color: var(--clr-bg);
-  height: 50vh;
+  height: 70vh;
   /* max-height: 400px; */
 }
 
@@ -50,7 +50,7 @@
 
 @media (max-width: 600px) {
   .techsection {
-    height: 60vh;
+    height: 90vh;
   }
   .techsection > div {
     width: 25%;
